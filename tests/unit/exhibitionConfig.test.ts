@@ -43,6 +43,16 @@ describe('exhibition configuration', () => {
     expect(walls[2]!.wall.color.toLowerCase()).toBe('#1e3a8a');
   });
 
+  it('mounts and titles the magnetic man on space 10', () => {
+    const walls = starterExhibition.stations.slice(0, starterExhibition.count);
+
+    expect(walls[9]!.title).toBe('The Magnetic Man');
+    expect(walls[9]!.artist).toBe('Anonymous');
+    expect(walls[9]!.year).toBe(1901);
+    expect(walls[9]!.imageSrc).toBe('/artworks/magnetic-man.jpg');
+    expect(walls[9]!.imageAspectRatio).toBeCloseTo(1756 / 2256);
+  });
+
   it('titles frame 1 after the celestial sun broadsheet', () => {
     const walls = starterExhibition.stations.slice(0, starterExhibition.count);
 

@@ -39,7 +39,7 @@ const starterStations: StationConfig[] = [
   ['Premium Toast', 'Nadia Okafor', 2023, '#d59b58', '#f5f0e6'],
   ['Small Weather', 'Elias Chen', 2021, '#6f8d83', '#191970'],
   ['Personal Magnetism', 'Mara Velez', 2020, '#b77565', '#e7e1f0'],
-  ['Common Light', 'Jonas Reed', 2022, '#c1a872', '#f6f7f2'],
+  ['The Magnetic Man', 'Anonymous', 1901, '#c1a872', '#f6f7f2'],
   ['Blue Orchard', 'Nadia Okafor', 2019, '#688c92', '#f4f1e8'],
   ['Held in Place', 'Elias Chen', 2024, '#b9815e', '#f2f0e9'],
   ['Halfway Home', 'Mara Velez', 2018, '#7d927e', '#eeeae2'],
@@ -86,6 +86,12 @@ starterStations[3]!.imageAspectRatio = 1198 / 970;
 starterStations[3]!.artist = 'Harold A. Taylor';
 starterStations[3]!.caption =
   'Autochrome. A single pale bloom held against deep shadow, colour carried in the fragile grain of the process.';
+
+// Space 10 hangs the magnetic man drawing from the 1901 photo essay.
+starterStations[9]!.imageSrc = '/artworks/magnetic-man.jpg';
+starterStations[9]!.imageAspectRatio = 1756 / 2256;
+starterStations[9]!.artist = 'Anonymous';
+starterStations[9]!.year = 1901;
 
 // Frame 9 hangs the green "Personal Magnetism" cover from the 1901 photo essay.
 starterStations[8]!.imageSrc = '/artworks/personal-magnetism-cover.jpg';
